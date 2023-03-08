@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+}
+
+body {
+  margin: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#scores {
+  border: 2px solid black;
+  list-style: none;
+}
+
+#scores li {
+  padding: 0 1rem;
+}
+
+#scores li:nth-of-type(even) {
+  background-color: #eee;
+}
+
+#score-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem !important;
+}
+
+#score-title {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#refresh-scores {
+  display: inline-block;
+}
+
+form > button {
+  align-self: flex-end;
+}
