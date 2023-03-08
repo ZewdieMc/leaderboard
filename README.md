@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>TO DO List</b></h3>
+  <h3><b>LeaderBoard</b></h3>
 
 </div>
 
@@ -32,14 +32,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To Do List <a name="about-project"></a>
+# 📖 LeaderBoard <a name="about-project"></a>
 
-To Do List is a simple and powerful application built with webpack.
+LeaderBoard is a simple and powerful application built with webpack and the Fetch javascript API.
 
 ## 🛠 Built With <a name="built-with"></a>
 webpack
-## Screenshoot
-![screenshot](./Screenshot.png)
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -69,7 +67,7 @@ webpack
 
 ### Key Features <a name="key-features"></a>
 
-- Set up a simple wabpack boiletplate for other projects.
+- Set up a simple wabpack boiletplate for the leaderboard project.
   - HtmlWebpackPlugin
   - Webpack server
   - Loaders 
@@ -79,7 +77,7 @@ webpack
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-See the [Live Demo](https://zewdiemc.github.io/To-Do-List/dist/) of the project.
+<!-- See the [Live Demo](https://zewdiemc.github.io/To-Do-List/dist/) of the project. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,23 +92,21 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-  Open terminal on the same folder of the project and run:
-```sh
- npm install
-```
+  - npm installed
+  - node installed
 
 ### Setup
 
 Clone this repository to your desired folder:
 ```sh
   cd my-folder
-  git clone git@github.com/ZewdieMc/To-Do-List.git
+  git clone git@github.com/ZewdieMc/LeaderBoard.git
 ```
 ### Install
 
 Install this project with:
 ```sh
-  cd To-Do-List
+  cd LeaderBoard
   npm install
 ```
 
@@ -157,7 +153,7 @@ Deployed using Github Pages.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement `Drag` and `Drop` events to the todo items.
+- Hit API to send and get data using endpoints.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -168,7 +164,7 @@ Deployed using Github Pages.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ZewdieMc/To-Do-List/issues).
+Feel free to check the [issues page](https://github.com/ZewdieMc/LeaderBoard/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
