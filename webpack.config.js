@@ -1,4 +1,4 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // installed via npm
 const path = require('path');
 
 module.exports = {
@@ -10,10 +10,10 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  plugins:[
+  plugins: [
     new HtmlWebpackPlugin({
-      template : path.resolve(__dirname, 'src', 'index.html')
-    })
+      template: path.resolve(__dirname, 'src', 'index.html'),
+    }),
   ],
   module: {
     rules: [
