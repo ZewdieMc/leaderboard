@@ -67,17 +67,16 @@ webpack
 
 ### Key Features <a name="key-features"></a>
 
-- Set up a simple wabpack boiletplate for the leaderboard project.
-  - HtmlWebpackPlugin
-  - Webpack server
-  - Loaders 
+- Add score
+- View list of scores
+- Refresh scores 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<!-- See the [Live Demo](https://zewdiemc.github.io/To-Do-List/dist/) of the project. -->
+[Coming soon]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +152,7 @@ Deployed using Github Pages.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Hit API to send and get data using endpoints.
+- Improve the look and feel of the application.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
