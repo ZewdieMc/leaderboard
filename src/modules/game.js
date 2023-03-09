@@ -50,6 +50,13 @@ class Game {
       return err;
     }
   }
+
+  renderScores = () => {
+    this.getScores().then((res) => {
+      const scoreContainer = document.querySelector('#scores');
+      scoreContainer.innerHTML = res.result.sort((a, b) => a.score - b.score).reverse().map((score) => `<li>${score.user}: ${score.score}</li>`).join('');
+    });
+  }
 }
 
 const game = new Game();
