@@ -19,7 +19,7 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   width: 80%;
   margin-left: 10%;
@@ -32,11 +32,11 @@ ul#scores {
 }
 
 #scores li {
-  padding: 0 2rem;
+  padding: 0.3rem 2rem;
 }
 
 #scores li:nth-of-type(even) {
-  background-color: #eee;
+  background-color: darkgray;
 }
 
 .score-container {
@@ -79,4 +79,20 @@ form > button {
 form > input {
   padding: 0.3rem;
   border: 2px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+#information {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+  background-color: #badabf;
+  color: rgb(20, 48, 20);
+  font-weight: bolder;
+  padding: 1rem;
+  border-radius: 4px;
 }
