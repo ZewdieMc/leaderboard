@@ -8,7 +8,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    static: './dist',
+    static: path.resolve(__dirname, 'dist'),
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -18,8 +19,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.(scss)$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
       },
     ],
   },
