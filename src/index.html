@@ -12,26 +12,26 @@
 
 <body>
   <h1>LeaderBoard</h1>
-  <div class="container">
-    <div class="score-container">
-      <div id="score-title">
+  <div class="container d-flex gap-3 text-center">
+    <div class="card g-col-9 w-50">
+      <div id="score-title" class="card-header">
         <h2>Recent Scores</h2>
-        <button id="refresh-scores">Refresh</button>
+        <button id='refresh-scores'class="btn btn-primary">Refresh</button>
       </div>
-      <ul id="scores">
-        scores
+      <ul class='list-group list-group-flush mr-0'id="scores">
+        <li class="list-group-item">No scores yet</li>
       </ul>
     </div>
-    <div class="form-container">
+    <div class="card align-self-start g-col-3 text-center">
       <h2>Add your score</h2>
-      <form id="form">
+      <form class='card-body'id="form">
         <label for="name"></label>
-        <input type="text" placeholder="Your name" id="name" required>
+        <input type="text" placeholder="Your name" id="name" class="form-control" required>
         <label for="score"></label>
-        <input type="number" placeholder="Your score" id="score" required>
-        <button type="submit">Submit</button>
-        <span id="information" class="hidden"></span>
+        <input type="number" placeholder="Your score" id="score" class="form-control" required>
+        <button class='btn btn-success'type="submit">Submit</button>
       </form>
+      <span id='info'class="alert alert-success alert-dismissible m-2 hidden" role="alert"></span>
     </div>
   </div>
 </body>
