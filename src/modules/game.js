@@ -1,11 +1,10 @@
 const myGame = { name: 'my new game' };
-const gameID = 'u4sSeeKHqAktLAVLfPrr';
+const gameID = 'Ob2A6Y86bhBAbubwUJE7';
 const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 const gameEndpoint = '/games/';
 const scoresEndPoint = '/scores/';
 const nameInput = document.querySelector('#name');
 const scoreInput = document.querySelector('#score');
-
 class Game {
   newGame = async () => {
     const response = await fetch(`${baseURL}${gameEndpoint}`, {
@@ -16,7 +15,7 @@ class Game {
       },
     });
     return response.json();
-  }
+  };
 
   getScores = async () => {
     try {
@@ -55,7 +54,7 @@ class Game {
     this.getScores().then((res) => {
       const scoreContainer = document.querySelector('#scores');
       scoreContainer.innerHTML = res.result.sort((a, b) => a.score - b.score).reverse()
-        .map((score) => `<li>${score.user}: ${score.score}</li>`).join('');
+        .map((score) => `<li class='list-group-item'>${score.user}: ${score.score}</li>`).join('');
     });
   }
 }
