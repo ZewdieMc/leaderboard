@@ -11,9 +11,9 @@
 </head>
 
 <body>
-  <h1>LeaderBoard</h1>
-  <div class="container d-flex gap-3 text-center">
-    <div class="card g-col-9 w-50">
+  <h1 class=''>LeaderBoard</h1>
+  <div class="d-flex flex-wrap gap-3 align-items-center">
+    <div class="card flex-fill">
       <div id="score-title" class="card-header">
         <h2>Recent Scores</h2>
         <button id='refresh-scores'class="btn btn-primary">Refresh</button>
@@ -22,7 +22,7 @@
         <li class="list-group-item">No scores yet</li>
       </ul>
     </div>
-    <div class="card align-self-start g-col-3 text-center">
+    <div class="card align-self-start flex-fill text-center">
       <h2>Add your score</h2>
       <form class='card-body'id="form">
         <label for="name"></label>
