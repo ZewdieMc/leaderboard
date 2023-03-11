@@ -11,18 +11,20 @@
 </head>
 
 <body>
-  <h1>LeaderBoard</h1>
-  <div class="container d-flex gap-3 text-center">
-    <div class="card g-col-9 w-50">
+  <h1 class=''>LeaderBoard</h1>
+  <div class="d-flex flex-wrap gap-3 align-items-center">
+    <div class="card flex-fill shadow border border-secondary border-1">
       <div id="score-title" class="card-header">
         <h2>Recent Scores</h2>
         <button id='refresh-scores'class="btn btn-primary">Refresh</button>
       </div>
       <ul class='list-group list-group-flush mr-0'id="scores">
-        <li class="list-group-item">No scores yet</li>
+        <div class="spinner-border text-success align-self-center my-1" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
       </ul>
     </div>
-    <div class="card align-self-start g-col-3 text-center">
+    <div class="card align-self-start flex-fill text-center shadow">
       <h2>Add your score</h2>
       <form class='card-body'id="form">
         <label for="name"></label>

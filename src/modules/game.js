@@ -54,7 +54,7 @@ class Game {
     this.getScores().then((res) => {
       const scoreContainer = document.querySelector('#scores');
       scoreContainer.innerHTML = res.result.sort((a, b) => a.score - b.score).reverse()
-        .map((score) => `<li class='list-group-item'>${score.user}: ${score.score}</li>`).join('');
+        .map((score, index) => `<li class='${index % 2 === 1 ? 'bg-secondary text-white' : ''} list-group-item'>${score.user}: ${score.score}</li>`).join('');
     });
   }
 }
