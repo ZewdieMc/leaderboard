@@ -11,20 +11,13 @@
 }
 
 body {
-  margin: 4rem 10%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
 }
 
-.container {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-left: 10%;
-}
 
 #scores li {
   padding: 0.3rem 2rem;
